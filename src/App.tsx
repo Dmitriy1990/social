@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { About } from './components/About';
+import { Censor } from './components/Censor';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { Invest } from './components/Invest';
+import { Properties } from './components/Properties';
+import { Slider } from './components/Slider';
+import { Page } from './components/UI/Page';
+import { GlobalStyle } from './globalStyle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Page>
+     <Header/>
+     <Slider/>
+     <About/>
+     <Properties/>
+     <Censor/>
+     <Invest/>
+     <Footer/>
+     <GlobalStyle/>
+    </Page>
   );
 }
 
